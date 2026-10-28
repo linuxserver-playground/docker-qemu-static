@@ -1,6 +1,7 @@
 # The manifest for docker-qemu-static. Schema: https://github.com/linuxserver-playground/builder/blob/main/schemas/image.schema.json
 schema: 1
 name: qemu-static
+kind: tool
 
 summary: Run multiple architectures of Docker containers on an x86_64 or aarch64 host using QEMU static.
 
