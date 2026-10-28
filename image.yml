@@ -6,9 +6,12 @@ summary: Run multiple architectures of Docker containers on an x86_64 or aarch64
 
 upstream:
   version:
-    type: command
-    run: |-
-      curl -sX GET https://deb.debian.org/debian/dists/trixie/main/binary-amd64/Packages.xz | xz -dc |grep -A 7 -m 2 'Package: qemu-user$' | awk -F ': ' '/Version/{print $2;exit}' | awk -F ':' '{print $2}'
+    type: deb_packages
+    index_url: https://deb.debian.org/debian/dists/trixie/main/binary-amd64/Packages.xz
+    package: qemu-user
+    transform:
+    - regex: '^[0-9]+:'
+      replace: ''
 
 release:
   branch: master
