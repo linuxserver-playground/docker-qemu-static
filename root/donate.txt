@@ -1,0 +1,2 @@
+QEMU donations: https://www.qemu.org/donations/
+Donate via PayPal (Software Freedom Conservancy): https://paypal.com/donate/?hosted_button_id=YN74TZRMBBM6U
