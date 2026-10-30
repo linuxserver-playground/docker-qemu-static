@@ -13,6 +13,11 @@ upstream:
     transform:
     - regex: '^[0-9]+:'
       replace: ''
+  sponsor:
+  - name: QEMU donations
+    url: https://www.qemu.org/donations/
+  - name: Donate via PayPal (Software Freedom Conservancy)
+    url: https://paypal.com/donate/?hosted_button_id=YN74TZRMBBM6U
 
 release:
   branch: master
